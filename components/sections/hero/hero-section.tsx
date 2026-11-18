@@ -67,7 +67,7 @@ export function HeroSection() {
              <span className="text-[9px] tracking-[0.2em]">CHILLALIVING · HOSPITALITY</span>
             <ButtonLink
               href={`#${SECTION_ID.experience}`}
-              className="min-h-16 flex-col gap-1 px-5 py-3 text-center"
+              className="min-h-16 flex-col items-start gap-1 px-5 py-3 text-left"
             >
               <span className="flex items-center gap-2">JELAJAHI OPSI SEWA — HARIAN & BULANAN<ArrowRight size={14} /></span>
             </ButtonLink>
@@ -77,7 +77,7 @@ export function HeroSection() {
             <ButtonLink
               href={`#${SECTION_ID.experience}`}
               variant="outline"
-              className="min-h-16 flex-col gap-1 px-5 py-3 text-center"
+              className="min-h-16 flex-col items-start gap-1 px-5 py-3 text-left"
             >
               <span className="flex items-center gap-2">PELUANG KEPEMILIKAN & STRATA TITLE<ArrowUpRight size={14} /></span>
             </ButtonLink>
