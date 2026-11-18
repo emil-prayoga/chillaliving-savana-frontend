@@ -63,7 +63,7 @@ export function HeroSection() {
             variants={fadeUp}
             className="mx-auto mt-8 grid w-full max-w-2xl gap-3 sm:grid-cols-2"
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col items-start gap-2">
              <span className="text-[9px] tracking-[0.2em]">CHILLALIVING · HOSPITALITY</span>
             <ButtonLink
               href={`#${SECTION_ID.experience}`}
@@ -72,7 +72,7 @@ export function HeroSection() {
               <span className="flex items-center gap-2">JELAJAHI OPSI SEWA — HARIAN & BULANAN<ArrowRight size={14} /></span>
             </ButtonLink>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col items-start gap-2">
             <span className="text-[9px] tracking-[0.2em]">SAVANA GROUP · INVESTASI & KEPEMILIKAN</span>
             <ButtonLink
               href={`#${SECTION_ID.experience}`}
