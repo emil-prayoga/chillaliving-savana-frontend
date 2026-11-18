@@ -38,10 +38,13 @@ export function HeroSection() {
         <div className="max-w-4xl">
           <motion.p
             variants={fadeUp}
-            className="mb-6 text-[10px] font-medium uppercase tracking-[0.3em] text-champagne sm:text-xs"
+            className="mb-6 flex items-center justify-center gap-4  text-[10px] font-medium uppercase tracking-[0.3em] text-champagne sm:text-xs"
           >
-            Satu Alamat Arsitektural, Dua Filosofi Menghuni
+          <span className="h-px w-12 bg-champagne/60" />
+          Satu Alamat Arsitektural, Dua Filosofi Menghuni
+          <span className="h-px w-12 bg-champagne/60" />
           </motion.p>
+          
           <motion.h1
             id="hero-heading"
             variants={fadeUp}
