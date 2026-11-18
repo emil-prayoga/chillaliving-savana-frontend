@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-obsidian: #171a18;
+  --color-charcoal: #242824;
+  --color-forest: #343b35;
+  --color-champagne: #b49a72;
+  --color-champagne-light: #c9b491;
+  --color-ivory: #e8e2d7;
+  --color-muted: #a6a69f;
+  --color-hairline: rgb(232 226 215 / 0.12);
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --container-content: 1240px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: auto;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-obsidian);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: var(--color-champagne);
+  color: var(--color-obsidian);
+}
+:focus-visible {
+  outline: 2px solid var(--color-champagne-light);
+  outline-offset: 3px;
+}
+
+/* Slow zoom untuk slide hero. Dihentikan jika pengguna memilih reduced motion. */
+@keyframes hero-zoom {
+  from { transform: scale(1.04); }
+  to { transform: scale(1.14); }
+}
+.hero-zoom {
+  animation: hero-zoom 10s linear forwards;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-zoom { animation: none; }
 }
