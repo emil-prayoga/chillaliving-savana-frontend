@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChillaLiving × Savana Group — Frontend Assignment
 
-## Getting Started
+Landing page properti premium yang mengintegrasikan layanan penyewaan apartemen ChillaLiving dan kepemilikan properti Savana Group dalam satu pengalaman digital.
 
-First, run the development server:
+## Deskripsi Proyek
+
+Proyek ini dikembangkan sebagai bagian dari proses seleksi Frontend Engineer WPU Community.
+
+ChillaLiving menyediakan layanan penyewaan apartemen dengan pilihan durasi harian, transit, dan bulanan. Sementara itu, Savana Group berfokus pada kepemilikan apartemen dan investasi properti.
+
+Tujuan proyek ini adalah merancang landing page yang mampu mengakomodasi kedua kebutuhan tersebut melalui pengalaman pengguna yang intuitif, tampilan premium, dan pendekatan yang berorientasi pada konversi.
+
+Konsep visual yang digunakan adalah **Cinematic Luxury / Dark Luxury**, dengan penekanan pada fotografi arsitektur, tipografi elegan, komposisi visual, dan animasi yang halus.
+
+## Ruang Lingkup Implementasi
+
+Implementasi frontend berfokus pada tiga bagian utama:
+
+| Bagian | Deskripsi |
+|---|---|
+| Navbar | Navigasi responsif dengan tampilan transparan dan perubahan tampilan saat scrolling |
+| Hero Section | Area utama dengan background arsitektur apartemen dan transisi gambar sinematik |
+| Section Sewa/Beli | Pemilihan layanan interaktif antara ChillaLiving dan Savana Group |
+
+Seluruh section lainnya disajikan dalam desain Figma sebagai rancangan landing page secara menyeluruh.
+
+## Fitur Utama
+
+- Navigasi responsif untuk desktop dan perangkat mobile.
+- Hero section dengan pergantian gambar dan animasi zoom halus.
+- Transisi navbar berdasarkan posisi scrolling.
+- Pemilihan layanan penyewaan dan kepemilikan apartemen secara interaktif.
+- Tampilan responsif pada berbagai ukuran layar.
+- Animasi antarelemen yang mendukung pengalaman pengguna.
+
+## Teknologi yang Digunakan
+
+| Teknologi | Kegunaan |
+|---|---|
+| Next.js | Framework pengembangan aplikasi berbasis React |
+| TypeScript | Menjaga konsistensi tipe data dan mengurangi kesalahan kode |
+| Tailwind CSS | Mengelola styling dan responsivitas antarmuka |
+| Framer Motion | Membuat animasi dan transisi antarelemen |
+| Lucide React | Menyediakan ikon antarmuka |
+
+### Alasan Pemilihan Teknologi
+
+Next.js digunakan karena menyediakan struktur pengembangan berbasis komponen dan mendukung optimasi performa aplikasi web.
+
+TypeScript membantu menjaga konsistensi kode melalui sistem tipe data yang lebih terstruktur. Tailwind CSS mempermudah penerapan desain responsif dan menjaga konsistensi styling.
+
+Framer Motion digunakan untuk menghadirkan animasi yang halus dan interaktif, khususnya pada hero section, navbar, dan pemilihan layanan.
+
+## Tantangan Selama Pengerjaan
+
+Bagian ini menjelaskan tantangan yang dihadapi selama proses pengembangan, antara lain:
+
+- Menjaga kesesuaian antara desain Figma dan implementasi frontend.
+- Membangun pengalaman hero yang sinematik tanpa mengabaikan keterbacaan konten.
+- Mengoptimalkan animasi agar tetap berjalan dengan baik pada berbagai perangkat.
+- Membedakan alur kebutuhan pengguna yang ingin menyewa dan membeli apartemen.
+
+## Hal yang Dipelajari
+
+- Menerjemahkan rancangan UI/UX menjadi komponen frontend yang terstruktur.
+- Memahami hubungan antara strategi produk dan pengalaman pengguna.
+- Menerapkan desain responsif menggunakan Tailwind CSS.
+- Mengembangkan interaksi dan animasi menggunakan Framer Motion.
+- Mempertimbangkan keseimbangan antara kualitas visual, aksesibilitas, dan performa.
+
+## Struktur Proyek
+
+```text
+chillaliving-savana-frontend/
+├── public/
+├── src/
+│   ├── app/
+│   └── components/
+│       ├── layout/
+│       ├── sections/
+│       └── ui/
+├── package.json
+└── README.md
+```
+
+*Struktur dapat disesuaikan dengan implementasi akhir.*
+
+## Cara Menjalankan Proyek
+
+### Persyaratan
+
+- Node.js (disarankan versi LTS).
+- npm.
+
+### Instalasi
+
+Clone repository:
+
+```bash
+git clone <repository-url>
+cd chillaliving-savana-frontend
+```
+
+Instal seluruh dependency:
+
+```bash
+npm install
+```
+
+Jalankan development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka alamat berikut melalui browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build Produksi
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Dokumentasi Desain
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dokumentasi strategi produk, design system, dan struktur keseluruhan landing page tersedia melalui:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Product Strategy & Design System:** [STRATEGY.md](./STRATEGY.md)
+- **Desain Figma:** [Masukkan tautan Figma]
 
-## Deploy on Vercel
+## Informasi Assignment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Proyek:** ChillaLiving × Savana Group  
+**Peran:** Kandidat Frontend Engineer  
+**Komunitas:** WPU Community  
+**Teknologi:** Next.js, TypeScript, Tailwind CSS, dan Framer Motion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Dikembangkan sebagai bagian dari proses seleksi Frontend Engineer WPU Community.

@@ -18,6 +18,7 @@ interface ExperiencePanelProps {
 export function ExperiencePanel({ option, active }: ExperiencePanelProps) {
   const reduceMotion = useReducedMotion();
   const offset = reduceMotion ? 0 : 12;
+  const secondaryCta = option.secondaryCta;
 
   return (
     <motion.div
@@ -54,9 +55,9 @@ export function ExperiencePanel({ option, active }: ExperiencePanelProps) {
           <ButtonLink href={option.cta.href} className="w-full sm:w-auto">
             {option.cta.label}
           </ButtonLink>
-          {option.secondaryCta ? (
-            <ButtonLink href={option.secondaryCta.href} variant="outline" className="w-full sm:w-auto">
-              {option.secondaryCta.label}
+          {secondaryCta ? (
+            <ButtonLink href={secondaryCta.href} variant="outline" className="w-full sm:w-auto">
+              {secondaryCta.label}
             </ButtonLink>
           ) : option.id === "sewa" ? (
             <ButtonLink href={CONTACT_HREF} variant="outline" className="w-full sm:w-auto">

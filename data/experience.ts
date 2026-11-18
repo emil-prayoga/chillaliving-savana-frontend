@@ -51,7 +51,7 @@ export const EXPERIENCE_OPTIONS: readonly ExperienceOption[] = [
       { title: "Passive Income Terintegrasi", description: "Kerja sama pengelolaan penyewaan hands-free melalui operator ChillaLiving." },
     ],
     cta: { label: "Konsultasi Kepemilikan", href: CONTACT_HREF },
-    secondaryCta: { label: "Unduh Brosur Portofolio", href: CONTACT_HREF },
+    secondaryCta: { label: "Minta Brosur Portofolio", href: CONTACT_HREF },
     image: {
       src: "/images/image4.png",
       alt: "Interior Horizon Sky Penthouse dengan panorama kota",
